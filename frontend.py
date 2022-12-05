@@ -7,7 +7,7 @@ import io
 st.title('DeepLabV3 image segmentation')
 
 # fastapi endpoint
-url = 'https://p8ai-api.herokuapp.com/'
+url = 'https://p8ai-api.herokuapp.com'
 endpoint = '/segmentation'
 
 st.write('''Obtain semantic segmentation maps of the image in input via DeepLabV3 implemented in PyTorch.
