@@ -38,4 +38,9 @@ if st.button('Get segmentation map'):
     else:
         segments = process(image, url+endpoint)
         segmented_image = Image.open(io.BytesIO(segments.content)).convert('RGB')
-        st.image([image, segmented_image], width=300)  # output dyptich
+        
+        img = Image.open(io.BytesIO(image))
+        img = img.convert('RGB')
+        img = img.resize((1024,1024), Image.NEAREST)
+
+        st.image([img, segmented_image], width=600)  # output dyptich
