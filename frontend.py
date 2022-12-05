@@ -39,7 +39,7 @@ if st.button('Get segmentation map'):
         segments = process(image, url+endpoint)
         segmented_image = Image.open(io.BytesIO(segments.content)).convert('RGB')
         
-        img = Image.open(io.BytesIO(image))
+        img = Image.open(io.BytesIO(image.read()))
         img = img.convert('RGB')
         img = img.resize((1024,1024), Image.NEAREST)
 
