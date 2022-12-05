@@ -43,4 +43,4 @@ if st.button('Get segmentation map'):
         img = img.convert('RGB')
         img = img.resize((1024,1024), Image.NEAREST)
 
-        st.image([img, segmented_image], width=600)  # output dyptich
+        st.image([img, segmented_image], width=300)  # output dyptich
