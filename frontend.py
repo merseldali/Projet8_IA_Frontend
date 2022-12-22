@@ -10,7 +10,7 @@ st.title('DeepLabV3 image segmentation')
 url = 'https://p8ai-api.herokuapp.com'
 endpoint = '/segmentation'
 
-st.write('''Obtain semantic segmentation maps of the image in input via DeepLabV3 implemented in PyTorch.
+st.write('''Obtain semantic segmentation maps of the image in input via DeepLabV3 implemented in Keras.
          This streamlit example uses a FastAPI service as backend.
          Visit this URL at `:8000/docs` for FastAPI documentation.''') # description and instructions
 
